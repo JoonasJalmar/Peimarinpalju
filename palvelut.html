@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palvelut | Vuokrapalju</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="calendar.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Peimarinpalju</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="palvelut.html">Palvelut</a></li>
+                    <li><a href="kayttoohjeet.html" class="active">Käyttöohjeet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section-title">Vuokrahinnasto</h2>
+            <div class="pricing-cards" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <div class="card">
+                    <img src="palju.jpg" alt="Palju yhden arkipäivän ajaksi">
+                    <h3>1 Arkipäivä</h3>
+                    <p class="price">70€</p>
+                </div>
+                <div class="card">
+                    <img src="palju.jpg" alt="Palju viikonlopun päiväksi">
+                    <h3>Viikonloppu päivä</h3>
+                    <p class="price">100€</p>
+                </div>
+                <div class="card">
+                    <img src="palju.jpg" alt="Palju koko viikonlopuksi">
+                    <h3>Koko viikonloppu</h3>
+                    <p class="price">220€</p>
+                </div>
+                <div class="card">
+                    <img src="palju.jpg" alt="Palju koko viikoksi">
+                    <h3>Koko viikko</h3>
+                    <p class="price">350€</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="calendar-section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: left; width: 100%;">Varauskalenteri</h2>
+            <div class="calendar-container" style="display: flex; gap: 20px;">
+                <div class="calendar-info" style="flex: 1;">
+                    <p>Vihreät päivät ovat vapaita, ja punaiset päivät ovat varattuja.</p>
+                    <p>Varaa palju lähettämällä sähköpostia osoitteeseen <strong>info@peimarinpalju.fi</strong> tai soittamalla numeroon <strong>045 121 9708</strong>.</p>
+                </div>
+                <div id="calendar" style="flex: 2;"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-left">
+                <h2>Peimarin Palju</h2>
+                <div class="social-icons">
+                    <p>&copy; 2025 Peimarinpalju. Kaikki oikeudet pidätetään.</p>
+                </div>
+            </div>
+            
+            <div class="footer-center">
+                <p><strong>Ota yhteyttä:</strong></p>
+                <p>Eemil Söderberg</p>
+                <p>Puh: 045 121 9708</p>
+                <p>Sähköposti: info@peimarinpalju.fi</p>
+            </div>
+            
+            <div class="footer-right">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="palvelut.html">Palvelut</a></li>
+                    <li><a href="kayttoohjeet.html">Käyttöhjeet</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
