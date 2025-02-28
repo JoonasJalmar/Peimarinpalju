@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let currentMonth = today.getMonth();
     let currentYear = today.getFullYear();
 
-    // Define reserved dates in Finnish format YYYY-DD-MM
+    // EEMIL: Laita tähän varatut päivät muodossa ("YYYY-DD-MM") 
+    // Laita myös pilkku jokaisen, paitsi viimeisen päivän jälkeen
+    // Vanhat päivät voi poistaa halutessa
     const reservedDates = [
         "2025-21-02",
         "2025-15-02",
