@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const calendarContainer = document.getElementById("calendar");
     const today = new Date();
+    const startMonth = today.getMonth();
+    const startYear = today.getFullYear();
     let currentMonth = today.getMonth();
     let currentYear = today.getFullYear();
 
@@ -58,8 +60,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
         }
-
         calendarContainer.innerHTML = calendarHTML + dayHTML + "</div>";
+        const prevButton = document.getElementById("prevMonth");
+        if (year < startYear || (year === startYear && month <= startMonth)) {
+            prevButton.disabled = true;
+            prevButton.style.opacity = '0.8';
+            prevButton.style.cursor = 'not-allowed';
+        } else {
+            prevButton.disabled = false;
+        }
         
         document.getElementById("prevMonth").addEventListener("click", function () {
             changeMonth(-1);
