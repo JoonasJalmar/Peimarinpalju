@@ -115,7 +115,8 @@
   function changeSlide(direction) {
     showSlide(currentSlideIndex + direction);
   }
-
+  /* Swipe functionality was janky. May upgrade. */
+  /*
   const slideshowContainer = document.querySelector('.slideshow-container');
   let touchStartX = 0;
   let touchEndX = 0;
@@ -139,6 +140,7 @@
       changeSlide(1);
     }
   }
+    */
   document.addEventListener('DOMContentLoaded', () => {
      if (slides.length > 0) {
          slides[0].classList.add('active');
