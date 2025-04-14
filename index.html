@@ -115,6 +115,11 @@
   function changeSlide(direction) {
     showSlide(currentSlideIndex + direction);
   }
+
+  const interval = setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+
   /* Swipe functionality was janky. May upgrade. */
   /*
   const slideshowContainer = document.querySelector('.slideshow-container');
